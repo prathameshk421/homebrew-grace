@@ -1,0 +1,26 @@
+name: Test
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, macos-13, ubuntu-latest, ubuntu-24.04-arm]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: Homebrew/actions/setup-homebrew@master
+      - name: Tap this repo
+        run: |
+          mkdir -p "$(brew --repository)/Library/Taps/prathameshk421"
+          ln -s "$GITHUB_WORKSPACE" "$(brew --repository)/Library/Taps/prathameshk421/homebrew-grace"
+      - uses: actions/checkout@v4
+      - run: brew style prathameshk421/grace
+      - run: brew audit --strict --online --formula prathameshk421/grace/grace
+      - run: brew install prathameshk421/grace/grace
+      - run: brew test prathameshk421/grace/grace
+      - run: grace --version
