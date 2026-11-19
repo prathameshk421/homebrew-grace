@@ -31,13 +31,26 @@ class Grace < Formula
 
   def caveats
     <<~EOS
-      Add grace to your shell, then open a new terminal:
-        zsh:  echo 'eval "$(grace init zsh)"' >> ~/.zshrc
-        bash: echo 'eval "$(grace init bash)"' >> ~/.bashrc
-        fish: echo 'grace init fish | source' >> ~/.config/fish/config.fish
+      grace is fast travel for your terminal.
+      It remembers every project folder you work in, on any disk,
+      and tags each one with the AI tools and editors you used there.
+      Type `grace` and pick a folder to jump to it.
 
-      `grace hub` needs tmux:
-        brew install tmux
+      Set it up in 2 steps:
+        1. Add one line to your shell, then open a new terminal:
+             zsh:  echo 'eval "$(grace init zsh)"' >> ~/.zshrc
+             bash: echo 'eval "$(grace init bash)"' >> ~/.bashrc
+             fish: echo 'grace init fish | source' >> ~/.config/fish/config.fish
+        2. Run `grace`. The first run imports your Claude Code and editor history.
+
+      More to try:
+        grace hub      agents, shell, live diff and file tree in one window
+        grace diff     the git changes of a folder
+        grace tree     the files of a folder as a tree
+        grace --help   every command
+
+      `grace hub` needs tmux: brew install tmux
+      Docs: https://github.com/prathameshk421/grace
     EOS
   end
 
