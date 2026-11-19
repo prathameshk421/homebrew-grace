@@ -5,23 +5,23 @@ class Grace < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/prathameshk421/grace/releases/download/v2.0.0/grace-v2.0.0-aarch64-apple-darwin.tar.gz"
-      sha256 "6948690fe8fba352c47ce3a5a1667bff9ff6ddfccc13fb526216f267330e41bb"
+      url "https://github.com/prathameshk421/grace/releases/download/v2.0.1/grace-v2.0.1-aarch64-apple-darwin.tar.gz"
+      sha256 "5f3655b4bfd6649507de8c7e4e94dfbc88661a081c2f7390bc4c5d5af75c05c2"
     end
     on_intel do
-      url "https://github.com/prathameshk421/grace/releases/download/v2.0.0/grace-v2.0.0-x86_64-apple-darwin.tar.gz"
-      sha256 "ebb6066bfced2da3a51678302ad8954c34b5aca39f60942950a2cf05e7990572"
+      url "https://github.com/prathameshk421/grace/releases/download/v2.0.1/grace-v2.0.1-x86_64-apple-darwin.tar.gz"
+      sha256 "f9727bc3d0c5b48498af6973a06631328916612fa8b3db9e019cef513af53438"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/prathameshk421/grace/releases/download/v2.0.0/grace-v2.0.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c507b342ee4968f0e059c1aaeca60f3122efd455fa3eb3a242208f962a050234"
+      url "https://github.com/prathameshk421/grace/releases/download/v2.0.1/grace-v2.0.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "1f78cc46637b35cf6d349f2e56f42e61da8eef62b1dbff0364ff779aff828f5f"
     end
     on_intel do
-      url "https://github.com/prathameshk421/grace/releases/download/v2.0.0/grace-v2.0.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d04f1943dae4b184baaaee21ad0406bb116fbd87bb8085fce2a0933ab7365339"
+      url "https://github.com/prathameshk421/grace/releases/download/v2.0.1/grace-v2.0.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f41b9b16e57e569898d3d5da400124aae1a21708ec9c34b35e509ed058cfa5bc"
     end
   end
 
