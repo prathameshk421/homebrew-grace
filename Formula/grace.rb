@@ -1,7 +1,6 @@
 class Grace < Formula
   desc "Fast travel between project folders, with tags for the AI tools used there"
   homepage "https://github.com/prathameshk421/grace"
-  version "2.0.0"
   license "MIT"
 
   on_macos do
