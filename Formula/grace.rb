@@ -1,7 +1,6 @@
 class Grace < Formula
   desc "Site of Grace for project navigation, AI coding tools, and tmux workspaces"
   homepage "https://github.com/prathameshk421/grace"
-  version "2.2.1"
   license "MIT"
 
   on_macos do
