@@ -1,26 +1,26 @@
 class Grace < Formula
   desc "Site of Grace for project navigation, AI coding tools, and tmux workspaces"
   homepage "https://github.com/prathameshk421/grace"
-  version "2.2.0"
+  version "2.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/prathameshk421/grace/releases/download/v2.2.0/grace-v2.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "7c67f858666d6eaab7f1b535c760853b183979d6b1ab69b1ae4840b326694fac"
+      url "https://github.com/prathameshk421/grace/releases/download/v2.2.1/grace-v2.2.1-aarch64-apple-darwin.tar.gz"
+      sha256 "6130edb99edc3eff85325205118926ecea7e3579f9071967f13f6e1078fd8497"
     else
-      url "https://github.com/prathameshk421/grace/releases/download/v2.2.0/grace-v2.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "826ccf861b05c0f5de8aeea50d8ae1271aa5d01b21c5ef206fb5a3e35678b35e"
+      url "https://github.com/prathameshk421/grace/releases/download/v2.2.1/grace-v2.2.1-x86_64-apple-darwin.tar.gz"
+      sha256 "df5cd066c0cfa4001dc5908b310779da3e434a4436a5c396c8afe13b9fb95af8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/prathameshk421/grace/releases/download/v2.2.0/grace-v2.2.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "cb8b07245c5e873dbfc6432e02275ece9efb86ee7f3a0ebe2ff66fe9f4542094"
+      url "https://github.com/prathameshk421/grace/releases/download/v2.2.1/grace-v2.2.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e09b868ca7f07fe6bd1a650dde2454b9fc19664e102dd4074362dc69df2ed513"
     else
-      url "https://github.com/prathameshk421/grace/releases/download/v2.2.0/grace-v2.2.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "554237bb8d02484f6e51dbdf069d74dd3ebcbc3897b1380b602e6ea8c9ebd03e"
+      url "https://github.com/prathameshk421/grace/releases/download/v2.2.1/grace-v2.2.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a29e8f9230bb302bba549994523cb8920c5a2d5baf3059570feafa3231181141"
     end
   end
 
